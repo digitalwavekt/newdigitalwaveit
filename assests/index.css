@@ -17,9 +17,11 @@ nav{
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+    margin-right: 150px;
 }
 nav img{
-    width: 100px;
+    width: 50px;
+    margin-left: 150px;
     
 }
 .nav-links{
@@ -49,7 +51,59 @@ nav img{
 .nav-links ul li:hover::after{
     width: 100%;
 }
-
+.text-box{
+    text-align: left;
+  margin-left: 150px;
+  margin-top: 100px;
+    
+}
+.subtitle {
+    color: #ff4c4c;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #F6F6F9;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .button {
+    padding: 15px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .service {
+    background-color: transparent;
+    color: #ff4c4c;
+    border: 2px solid #ff4c4c
+  }
+  
+  .service:hover {
+    background-color: #ff1a1a;
+  }
+  
+  .contact {
+    background-color: transparent;
+    color: #ff4c4c;
+    border: 2px solid #ff4c4c;
+  }
+  
+  .contact:hover {
+    background-color: #ff4c4c;
+    color: #fff;
+  }
 /* Home End */
 
 /* Work Start */
@@ -59,7 +113,9 @@ nav img{
     flex-wrap: wrap;
     width: 100%;
     background-color: #F6F6F9;
-    margin: 70px 70px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    
 }
 
 .card {
@@ -69,18 +125,16 @@ nav img{
     margin: 10px;
     padding: 20px;
     text-align: left;
-    min-width: 250px;
-    max-width: 300px;
+    width: 250px;
+    
     clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0 100%, 0% 20%);
-    transition: transform 0.3s;
-}
-.card.highlight {
-    background-color:#24126A;
-    color: #fff;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
+
 .card:hover {
-    transform: translateY(-10px);
+    background-color: #C0C0C0; /* Change this to your desired hover background color */
+    transform: scaleY(1.1);   
 }
 
 .work-icon img{
@@ -164,76 +218,94 @@ nav img{
     justify-content: center;
 }
 
-.heading {
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-
-.heading h2 {
-    color: #e02d2d;
-    font-size: 1.5em;
-}
-
-.heading h1 {
-    font-size: 2.5em;
-    margin-top: 10px;
+.main-container {
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  header {
     margin-bottom: 20px;
-}
-
-.see-content {
+  }
+  
+  .subheading {
+    color: #ff4c4c;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-}
-
-.steps {
+  }
+  
+  .left-container{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 900px;
-    margin: 0 auto;
-    margin-left: 200px;
-}
+    height: 75%;
+    margin-left: 150px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
 
-.step {
+
+
+  .right-container {
     display: flex;
-    align-items: left;
-    margin: 20px 0;
-}
-
-.log{
-    flex: 0 0 50px;
-    margin-right: 20px;
-
-}.log img {
-    width: 100px;
-    height: 100px;
-}
-
-.log h3 {
-    font-size: 1.2em;
-    margin-bottom: 5px;
-}
-
-.steps .step p {
-    font-size: 0.9em;
-    color: #666;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 75%;
+    margin-right: 150px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  
+  .sub-container {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-bottom: 20px;
     text-align: left;
-    padding-top: 20%;
-}
-.img {
-    flex: 1;
-    text-align: center;
-    padding-top: 80px;
-    align-items: center;
-}
-
-.img img {
+  }
+  
+  .sub-container .icon {
+    position: absolute;
+    top: 20px;
+    right: -50px; /* Adjust to position the icon outside the container */
+    width: 40px;
+    height: 40px;
+  }
+  
+  .right-container .sub-container .icon {
+    left: -50px; /* Adjust to position the icon outside the container */
+    right: auto;
+  }
+  
+  .center-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+  
+  .mockup {
     max-width: 100%;
     height: auto;
-    border-radius: 20px;
-}
+  }
+    
+  
 /* Our See End */
 
 /*Services Start*/
