@@ -57,23 +57,23 @@ nav img{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    max-width: 1200px;
+    width: 100%;
+    background-color: #F6F6F9;
     margin: 70px 70px;
 }
 
 .card {
     background-color: #fff;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 10px;
     padding: 20px;
-    text-align: center;
-    flex: 1;
+    text-align: left;
     min-width: 250px;
     max-width: 300px;
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0 100%, 0% 20%);
     transition: transform 0.3s;
 }
-
 .card.highlight {
     background-color:#24126A;
     color: #fff;
@@ -83,50 +83,25 @@ nav img{
     transform: translateY(-10px);
 }
 
-.icon{
-    width: 60px;
-    height: 60px;
+.work-icon img{
+    width: 80px;
+    height: 80px;
     padding-top: 10px;
     margin-bottom: 40px;
-    border-radius: 5px;
-    background-color: #24126A;
-    box-shadow: 0 14px 18px rgba(29, 5, 100, 0.1);
-    
+    margin-right: 150px;
+  
 }
-
-.icon.highlight{
-    width: 60px;
-    height: 60px;
-    padding-top: 10px;
-    margin-bottom: 40px;
-    border-radius: 5px;
-    background-color: #3A2A79;
-    box-shadow: 0 14px 18px rgba(242, 241, 244, 0.1);
-    
-}
-
-.diamond-icon .icon{
-    width: 50px;
-    height: 50px;
-    background: #4a4a4a;
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-.icon h2 {
+.card h2 {
     margin-bottom: 15px;
     font-size: 1.5em;
 }
 
-.icon p {
+.card p {
     font-size: 1em;
     color: #666;
 }
 
-.icon .highlight p {
+.card.highlight p {
     color: #fff;
 }
 
@@ -216,9 +191,9 @@ nav img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%;
-    max-width: 400px;
+    width: 900px;
     margin: 0 auto;
+    margin-left: 200px;
 }
 
 .step {
@@ -230,9 +205,10 @@ nav img{
 .log{
     flex: 0 0 50px;
     margin-right: 20px;
+
 }.log img {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 }
 
 .log h3 {
@@ -621,25 +597,20 @@ nav img{
     height: 180px;
 }
 
-.date {
-    position: absolute;
-    bottom: 200px;
-    left: 10px;
-    height:50px;
-    background-color: #ff4c61;
-    color: white;
-    padding: 5px 10px;
-    font-size: 12px;
+.blog-image .date img {
+    width: 70px;
+    height:70px;
+    bottom: 80px;
+    right: 100px;
 }
 
 .content .meta {
     font-size: 10px;
     color: #FF214F;
+    display:flexbox;
     margin-bottom: 10px;
-    display: block;
     justify-content: space-between;
     word-spacing: 5px;
-    margin-top: 10px;
 }
 
 .content h3 {
