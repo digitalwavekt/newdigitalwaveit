@@ -427,7 +427,7 @@ nav img{
 
 .portfolio-item {
     position: relative;
-    width:250px;
+    width:180px;
     margin-bottom: 30px;
     overflow: hidden;
     border-radius: 10px;
@@ -455,7 +455,7 @@ nav img{
     background:#fff;
     color: white;
     border-radius: 10px;
-    margin-left: 25px;
+    margin-left: 10px;
     padding: 15px;
     text-align: center;
     width: 200px;
@@ -474,14 +474,14 @@ nav img{
 }
 
 .load-more {
-    margin-top: 20px;
-    padding-top: 40px;
+    margin-top: 10px;
+    padding-top: 10px;
 }
 
 .load-more button {
     background-color: #e02d2d;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
