@@ -112,21 +112,19 @@ nav img{
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
-    background-color: #F6F6F9;
     margin-top: 70px;
     margin-bottom: 70px;
+    background-color: #F6F6F9;
     
 }
 
 .card {
-    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(246, 243, 243, 0.1);
     margin: 10px;
     padding: 20px;
     text-align: left;
     width: 250px;
-    
     clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0 100%, 0% 20%);
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
@@ -134,7 +132,7 @@ nav img{
 
 .card:hover {
     background-color: #C0C0C0; /* Change this to your desired hover background color */
-    transform: scaleY(1.1);   
+    transform: scaleY(0.9);   
 }
 
 .work-icon img{
@@ -216,6 +214,7 @@ nav img{
     width: 100%;
     text-align: center;
     justify-content: center;
+    margin-left: 100px;
 }
 
 .main-container {
@@ -427,7 +426,7 @@ nav img{
 
 .portfolio-item {
     position: relative;
-    width:180px;
+    width:250px;
     margin-bottom: 30px;
     overflow: hidden;
     border-radius: 10px;
@@ -455,7 +454,7 @@ nav img{
     background:#fff;
     color: white;
     border-radius: 10px;
-    margin-left: 10px;
+    margin-left: 25px;
     padding: 15px;
     text-align: center;
     width: 200px;
@@ -474,7 +473,7 @@ nav img{
 }
 
 .load-more {
-    margin-top: 10px;
+    margin-top: 20px;
     padding-top: 10px;
 }
 
@@ -671,9 +670,11 @@ nav img{
 }
 
 .blog-image .date img {
-    width: 35px;
-    height:35px;
-    bottom: 0px;
+    position: relative;
+    width: 50px;
+    height:50px;
+    bottom: 80px;
+    right: 70px;
     
 }
 
@@ -681,7 +682,6 @@ nav img{
     font-size: 10px;
     color: #FF214F;
     display:flex;
-    margin-bottom: 0px;
     justify-content: space-between;
     word-spacing: 5px;
     text-align: center;
@@ -722,12 +722,14 @@ nav img{
 .program-section {
     text-align: center;
     width: 100%;
+    height:600px;
 }
 
 .program-section h2 {
     color: #ff2d55;
     font-size: 1.5em;
     margin-bottom: 10px;
+    margin-top: 70px;
 }
 
 .program-section h1 {
@@ -876,6 +878,11 @@ nav img{
 .contact-section {
     text-align: center;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1em;
+    height: 1000px;
 }
 
 .contact-section h2 {
@@ -925,31 +932,35 @@ nav img{
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
-    width: 100%;
-    max-width: 830px;
-    margin-left: 200px;
+    margin-right: 60px;
 }
 
 .contact-form h4{
-    color: #ff2d55;
-    font-size: 1.8em;
-    margin-top: 80px;
-    margin-right: 250px;
+    color: #f44336;
+    text-align: left;
 }
 
 .contact-form p{
-    font-size: 2.5em;
-    color: #333;
-    margin-right: 250px;
+    font-size: 2rem;
+    text-align: left;
+    font-weight: bold;
 }
 
 .contact-form form {
     background: #fff;
     padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 400px;
-    width: 100%;
+    width: 50%;
+}
+
+label{
+    color: #333;
+    font-size: 17px;
+    margin-top: 12px;
+    margin-bottom: 5px;
+    text-align: left;
+    margin-right: 270px;
+    width: 200px;
 }
 
 .contact-form form input,
@@ -957,8 +968,13 @@ nav img{
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
+    background-color: #F6F6F9;
     border: 1px solid #ddd;
     border-radius: 5px;
+}
+
+.contact-form form input::placeholder{
+    text-transform: capitalize;
 }
 
 .contact-form form button {
@@ -973,8 +989,6 @@ nav img{
 .contact-form .map iframe {
     border: none;
     border-radius: 15px;
-    width: 100%;
-    height: 400px;
 }
 
 /* Contact End*/
@@ -985,33 +999,52 @@ nav img{
 .footer {
     background-color: #24126A;
     color: #fff;
-    padding: 50px 20px;
-}
-
-.footer-container {
+    padding: 50px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 900px;
-    margin: 0 auto;
+    flex-flow: row wrap;
+}
+ .footer > *{
+    flex: 1 100%;
+ }
+.footer-container {
+   margin-right: 1.25em;
+   margin-bottom: 2em;
 }
 
-.footer-col {
-    flex: 1;
-    min-width: 200px;
-    margin: 20px 0;
-}
-
-.footer-logo {
+.footer-container img {
     width: 100px;
     margin-bottom: 20px;
 }
 
-.footer p {
-    line-height: 1.6;
-    font-size: 0.75em;
+h2{
+    font-size: 175px;
+    font-weight: 600;
 }
 
+.footer ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer li{
+    line-height: 2em;
+}
+
+.footer a{
+    text-decoration: none;
+}
+.footer-col{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer-col > *{
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+.box a{
+    color: #fff;
+}
 .social-icons {
     margin-top: 20px;
 }
@@ -1026,6 +1059,9 @@ nav img{
     height: 30px;
 }
 
+footer-col{
+
+}
 .footer-col h3 {
     margin-bottom: 20px;
     margin-top: 40px;
@@ -1074,11 +1110,20 @@ nav img{
 
 .footer-bottom {
     text-align: center;
-    margin-top: 50px;
+    padding-top: 50px;
+    background-color: #F6F6F9;
+    height: 70px;
+}
+
+.footer-container p {
+    color: #fff;
+    padding-right: 20%;
+
 }
 
 .footer-bottom p {
     margin-bottom: 10px;
+    color: #333;
 }
 
 .footer-bottom a {
