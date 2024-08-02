@@ -1450,6 +1450,16 @@ footer .col-3 p i:hover{
 /*Fun Fact End*/
 
 /*Testimonial Start*/
+@media (max-width: 1400px){
+    .testimonial-section{
+        height: 1400px;
+    }
+    .testimonial-container img {
+        width: 700px;
+        height: 450px;
+        padding-right: 80px;
+    } 
+}
 @media (max-width: 1200px){
     .testimonial-section{
         height: 1400px;
@@ -1515,3 +1525,258 @@ footer .col-3 p i:hover{
     } 
 }
 /*Testimonial End*/
+/*blog Start*/
+@media (max-width: 1400px) {
+    .blog-section{
+        height: 1300px;
+    }
+    .intro-video {
+        width: 800px;
+        height: auto;
+        margin-top: -200px;
+        padding-right: 200px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .blog-section{
+        height: 1300px;
+    }
+    .intro-video {
+        width: 800px;
+        height: 300px;
+        margin-top: -200px;
+        padding-right: 250px;
+    }
+}
+
+@media (max-width: 992px) {
+    .blog-section{
+        height: 1300px;
+    }
+    .intro-video {
+        width: 800px;
+        height: 300px;
+        margin-top: -200px;
+        padding-right: 250px;
+
+    }
+
+    .cards-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 870px) {
+    .blog-section{
+        height: 1300px;
+    }
+    .intro-video {
+        width: 1000px;
+        height: 300px;
+        margin-top: -200px;
+        padding-right: 600px;
+
+    }
+
+    .cards-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-section{
+        height: 1700px;
+    }
+    .intro-video {
+        width: 1200px;
+        height: 300px;
+        margin-top: -200px;
+        padding-right: 700px;
+    }
+
+    .cards-container {
+        width: 400px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    .card-tst {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .meta-info {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .blog-section{
+        height: 1700px;
+    }
+    .blog-section{
+        height: 1700px;
+    }
+    .intro-video {
+        width: 1200px;
+        height: 300px;
+        margin-top: -200px;
+        padding-right: 800px;
+    }
+
+    .cards-container {
+        width: 400px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+
+    .card-tst {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .meta-info {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .blog-section{
+        height: 1700px;
+    }
+    .blog-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .intro-video {
+        width: 1300px;
+        height: 300px;
+        margin-top: -200px;
+        padding-right: 900px;
+    }
+
+    .cards-container {
+        width: 400px;
+        margin: 0 auto;
+        padding: 0 5px;
+    }
+
+    .card-tst {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .card-content h1 {
+        font-size: 1rem;
+    }
+
+    .card-content h5 {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .blog-section{
+        height: 1700px;
+    }
+    .blog-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .intro-video {
+        width: 1300px;
+        height: 300px;
+        margin-top: -200px;
+        padding-right: 1000px;
+    }
+
+    .cards-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 5px;
+    }
+
+    .card-tst {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .card-content h1 {
+        font-size: 1rem;
+    }
+
+    .card-content h5 {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .blog-section{
+        height: 1600px;
+    }
+    .blog-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .intro-video {
+        width: 1300px;
+        height: 200px;
+        margin-top: -150px;
+        padding-right: 1100px;
+    }
+
+    .cards-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 5px;
+    }
+
+    .card-tst {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .card-content h1 {
+        font-size: 1rem;
+    }
+
+    .card-content h5 {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 276px) {
+    .blog-section{
+        height: 1200px;
+    }
+    .blog-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .intro-video {
+        width: 1300px;
+        height: 300px;
+        margin-top: -200px;
+        padding-right: 900px;
+    }
+
+    .cards-container {
+        width: 100%;
+    }
+
+    .card-tst {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .card-content h1 {
+        font-size: 1rem;
+    }
+
+    .card-content h5 {
+        font-size: 0.8rem;
+    }
+}
