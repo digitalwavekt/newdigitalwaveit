@@ -11,7 +11,7 @@
     position: relative;
     background-image: url(images/Hero.png);
 }
-nav{
+nav {
     position: relative;
     display: flex;
     padding: 2% 6%;
@@ -19,28 +19,39 @@ nav{
     align-items: center;
     margin-right: 150px;
 }
-nav img{
+
+nav img {
     width: 50px;
     margin-left: 150px;
-    
 }
-.nav-links{
+
+.nav-links {
     flex: 1;
-    text-align:right;
-} 
-.nav-links ul li{
+    text-align: right;
+}
+
+.nav-links ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
 }
-.nav-links ul li a{
-    color:#fff;
+
+.nav-links ul li a {
+    color: #fff;
     text-decoration: none;
     font-size: 15px;
 }
-.nav-links ul li::after{
-    content:'';
+
+.nav-links ul li::after {
+    content: '';
     width: 0%;
     height: 2px;
     background: #f44336;
@@ -48,9 +59,52 @@ nav img{
     margin: auto;
     transition: 0.5s;
 }
-.nav-links ul li:hover::after{
+
+.nav-links ul li:hover::after {
     width: 100%;
 }
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 2% 4%;
+        margin-right: 0;
+    }
+
+    nav img {
+        margin-left: 0;
+    }
+
+    .nav-links {
+        text-align: center;
+        width: 100%;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .nav-links ul li a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 2% 2%;
+    }
+
+    .nav-links ul li a {
+        font-size: 16px;
+    }
+}
+
 .text-box{
     text-align: left;
   margin-left: 150px;
