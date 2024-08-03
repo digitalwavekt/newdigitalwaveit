@@ -90,9 +90,7 @@ main .container {
 }
 
 .program-details {
-    background-color: #f9f9f9;
     padding: 20px;
-    border: 1px solid #ddd;
     margin-bottom: 20px;
 }
 
@@ -202,7 +200,6 @@ aside {
 footer {
     background-color: #333;
     color: #fff;
-    padding: 40px 0;
 }
 
 .footer-info, .footer-links, .footer-contact, .newsletter {
