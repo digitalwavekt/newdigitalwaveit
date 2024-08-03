@@ -5,78 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Single Program - Web Development</title>
     <link rel="stylesheet" href="assests/program.css">
+     <!-- Bootstrap Link -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <!-- Bootstrap Link -->
+
+     <!-- Font Awesome Cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+     <!-- Font Awesome Cdn -->
+
 </head>
 <body>
     <!-- Navbar -->
-    <nav>
-        <div class="container">
-            <a href="#" class="logo">Digital Wave</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">About</a></li>
-                <li><a href="index.html">Services</a></li>
-                <li><a href="index.html">Portfolio</a></li>
-                <li><a href="index.html">Upcoming Product</a></li>
-                <li><a href="index.html">Testimonial</a></li>
-                <li><a href="index.html">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <section class="header">
+        
+        <nav>
+            <a href="index.html"><img src="assests/images/logo.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Upcoming Products</a></li>
+                    <li><a href="#">testimonial</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+         </nav>
+         <div class="text-box">
+            <p class="subtitle">Single Program</p>
+            <h1 class="title">Home /<span class="tit"> Single Program</span></h1>
+          </div>
+</section>
 
-    <!-- Main Content -->
+<!-- Main Content -->
     <main>
-        <div class="container">
-            <h1>Single Program</h1>
-            <nav class="breadcrumb">
-                <a href="#">Home</a> / <span>Single Program</span>
-            </nav>
+        <section class="container">
             <h2>Web Development</h2>
             <div class="program-images">
-                <img src="image1.jpg" alt="Image 1">
-                <img src="image2.jpg" alt="Image 2">
-                <img src="image3.jpg" alt="Image 3">
-                <img src="image4.jpg" alt="Image 4">
+                <img src="assests/images/dev.png" alt="Image 1">
+                <img src="assests/images/dev-2.jpeg" alt="Image 2">
+                <img src="assests/images/dev-3.jpeg" alt="Image 3">
+                <img src="assests/images/dev-4.png" alt="Image 4">
             </div>
             <div class="program-details">
                 <span class="price">$134.00</span> <span class="old-price">$160.00</span>
-                <p>As a dedicated web developer, I specialize in transforming designs into responsive, high-quality web pages...
-                    Here in this program You will learn from starting to Ending - deployment in just 45 days.
-                    we will learn how to build a website using HTML, CSS, JavaScript and Bootstrap. we will also learn 
-                    React Liberary , Talwind CSS as js liberary.
-                     next to this we will learn Data base using MYSQL , how to create and use of database.
-                     for Backend we are going to learn Node JS. with this we will also learn about Git and Github.
-                     Then last phase we will learn how to deploy our website.
-                     we will also learn handling api using javascript.
-                     Before starting the Training You will Get To Know about Structure how the website works on behalf of 
-                     Frontend and Backend.    ~
-    
-                     <a style="text-decoration: brown; color: brown;">  To Register for This program Please click on the Register Link Below. </a><br>
+                <p>As a dedicated web developer, i specialize in transforming designs into responsive, high-quality web pages. With expertise in HIMI, CSS, JavaScript, jQuery, and frameworks like Bootstrap and lailwindCSS, bring your vision to life with pixel-perfect precision. My services encompass the conversion of PSD, HGMA, XO, Sketch, PNG, and PDF designs into interactive, modern websites. I ensure every site is optimized for speed and SHO, providing a seamless user experience across all devices<br>
+                    <br>Leveraging React.js, I create dynamic, user iendly interfaces, integrating animations and interactive elements to engage users. My proficiency extends to developing dynamic sliders and scrollers, making your site visually appealling and easy to navigate. I prioritize speed optimization to ensure fast load times, enhancing both user satisfaction and search engine raniange<br>  
+                    <br>With a focus on detall and quality, I deliver web solutions that are not only oesthetically pleasing but also functional and robust whether you need a complete website overhaul or a new site built from scratch. am committed to delivering top-notch results that exceed expectations. Let's collaborate to create a digital presence that stands out in today's competitive landscape</p>
                 <a href="#" class="btn">Register Link</a>
             </div>
-        </div>
+            <div class="tags-bt">
+                <h3>Tags:</h3>
+                <div class="tag-con">
+                    <a href="#" class="ta">Development</a>
+                    <a href="#" class="ta">Web Design</a>
+                    <a href="#" class="ta">App Design</a>
+                    <a href="#" class="ta">UI/UX</a>
+                </div>
+                <div class="social-bt">
+                    <h3>share:</h3>
+                    <a class="social-btnn"><i class="fab fa-twitter"></i></a>
+                    <a class="social-btnn"><i class="fab fa-facebook"></i></a>
+                    <a class="social-btnn"><i class="fab fa-youtube"></i></a>
+                    <a class="social-btnn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </section>
 
         <!-- Sidebar -->
         <aside>
             <div class="search">
-                <input type="text" placeholder="Search Here...">
+                <label for="search">Search</label>
+                    <input type="text" placeholder="Search Here...">
             </div>
-            <div class="categories">
-                <h3>Categories</h3>
-                <ul>
-                    <li><a href="#">Web Developer (10)</a></li>
-                    <li><a href="#">Data Visualization (5)</a></li>
-                    <li><a href="#">UI/UX Designer (7)</a></li>
-                    <li><a href="#">Android Development (3)</a></li>
-                    <li><a href="#">Web Design (8)</a></li>
+            <div class="categories-container">
+                <h2>Categories</h2>
+                <ul class="categories-list">
+                    <li><span class="dot"></span> Web Developer <span class="count">(10)</span></li>
+                    <li><span class="dot"></span> Data Visualization <span class="count">(05)</span></li>
+                    <li><span class="dot"></span> UI/UX Designer <span class="count">(07)</span></li>
+                    <li><span class="dot"></span> Android Development <span class="count">(03)</span></li>
+                    <li><span class="dot"></span> Web Design <span class="count">(08)</span></li>
                 </ul>
             </div>
             <div class="latest-program">
-                <h3>Latest Program</h3>
-                <ul>
-                    <li><a href="#">Web Development - August 10, 2024</a></li>
-                    <li><a href="#">Web Design - July 29, 2024</a></li>
-                    <li><a href="#" style="color: blue;">Android Development - Comming soon</a></li>
+                <h2>Latest Program</h2>
+                <ul class="program-list">
+                    <li>
+                        <img src="assests/images/dev.png" alt="Web Development" class="program-image">
+                        <div class="program-info">
+                            <h3>Web Development</h3>
+                            <span class="program-date">📅 Jan 07, 2024</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assests/images/dev-2.jpeg" alt="Web Design" class="program-image">
+                        <div class="program-info">
+                            <h3>Web Design</h3>
+                            <span class="program-date">📅 Jan 07, 2024</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="assests/images/dev-4.png" alt="Android Development" class="program-image">
+                        <div class="program-info">
+                            <h3>Android Development</h3>
+                            <span class="program-date">📅 Jan 07, 2024</span>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <div class="tags">
@@ -86,64 +123,86 @@
                     <a href="#" class="tag">Web Design</a>
                     <a href="#" class="tag">App Design</a>
                     <a href="#" class="tag">UI/UX</a>
+                    <a href="#" class="tag">UI Design</a>
                 </div>
             </div>
         </aside>
     </main>
 
     <!-- Contact Form -->
-    <section class="contact-form">
-        <div class="container">
-            <h3>Contact Form</h3>
-            <form>
-                <input type="text" name="name" placeholder="Your Name">
-                <input type="email" name="email" placeholder="Your Email">
-                <input type="text" name="website" placeholder="Your Website">
-                <input type="text" name="subject" placeholder="Your Subject">
-                <textarea name="message" placeholder="Your Message"></textarea>
-                <button type="submit">Send Your Message</button>
-            </form>
-        </div>
-    </section>
+    <div class="contact-form-container">
+        <h2>Contact Form</h2>
+        <form action="#" method="post" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name
+                <input type="text" name="name" placeholder="Enter Name" required></label>
+                <label for="email">Email
+                <input type="email" name="email" placeholder="Enter Email" required></label>
+            </div>
+            <div class="form-group">
+                <label for="website">Website
+                <input type="text" name="website" placeholder="Website"></label>
+                <label for="subject">Subject
+                <input type="text" name="subject" placeholder="Subject" required></label>
+            </div>
+            <div class="form-group">
+                <label for="message">Message
+                <textarea name="message" rows="5" placeholder="Message" required></textarea></label>
+            </div>
+            <button type="submit" class="submit-button">Send Your Message</button>
+        </form>
+    </div>
+    <!-- footer Start-->
+<footer>
+    <br/><br/>
+    <div class="footer-container">
+        <div class="col-3">
+            <h1 class="footer-logo"><img src="assests/images/logo.png" alt=""><span>Digital Wave</span></h1>
+            <p>DIGITAL WAVE IT SOLUTION , provides you best example of work. we bring your dreams true in digital world. if you have any idea ,bring it to us and we will help to complete it. we have extra ordinery team to work on different different teachnologies.</p>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-info">
-                <h4>Digital Wave IT Solution</h4>
-                <p>Provides you the best example of work...</p>
+            <div class="social">
+                <a class="social-btn"><i class="fab fa-twitter"></i></a>
+                <a class="social-btn"><i class="fab fa-facebook"></i></a>
+                <a class="social-btn"><i class="fab fa-youtube"></i></a>
+                <a class="social-btn"><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <div class="footer-links">
-                <h4>Useful Links</h4>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Testimonial</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <h4>Contact Info</h4>
-                <ul>
-                    <li>Location: 39 Mitra Nagar Khirni Phatak Jhotwara Jaipur 302012</li>
-                    <li>Email: contact@digitalwaveitsolution.com</li>
-                    <li>Phone: +91-141-3181323, +91-9549145596</li>
-                </ul>
-            </div>
-            <div class="newsletter">
-                <h4>Our Newsletter</h4>
-                <p>We provide best pricing package to grow your lead capture</p>
-                <form>
-                    <input type="email" placeholder="Email Address">
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
+
         </div>
-        <div class="copyright">
-            <p>&copy; Copyright 2024 Digital Wave IT Solution</p>
+        
+        <div class="col-3">
+            <h5>Quick Links</h5>
+            <a class="btn btn-link">About Us</a>
+            <a class="btn btn-link">Contact Us</a>
+            <a class="btn btn-link">Our Services</a>
+            <a class="btn btn-link">Term &amp; Condition</a>
+            <a class="btn btn-link">Support</a>
+
         </div>
-    </footer>
+
+        <div class="col-3">
+            <h5>Contact Info</h5>
+            <p>Contact us and we'll get back to you within 24 hours.</p>
+            <p><i class="fa fa-map-marker-alt me-3"></i>Location<br>39 A mitra nagar khirni phatak jaipur</p>
+            <p><i class="fa fa-envelope me-3"></i>Email<br>contact2digitalwave@gmail.com</p>
+            <p><i class="fa fa-phone-alt me-3"></i>Phone<br>+91-1413181323, 9549145596</p>
+        </div>
+
+        <div class="col-3">
+            <h5>Our Newsletter</h5>
+            <p>We Provide Best Pricing package to grow your lead capture.</p>
+            <div style="width: 400px; position: relative;">
+                <input class="input" type="text" placeholder="Your Email"/>
+            </div>
+            <button type="button" class="signbtn">Subscribe</button>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <br/><br/>
+</footer>
+<div class="copy">
+    <p>@ Copyright 2024<span class="digi"> DIGITALWAVEITSOLUTION</span></p>
+</div>
+<!-- footer End-->
+
 </body>
 </html>
